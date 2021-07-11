@@ -1,0 +1,138 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --back-img : linear-gradient(200deg, #000000, #00b6ed)
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+.title {
+  padding: 10px;
+  border: 1px solid #858585;
+  border-radius: 10px;
+  width: 400px;
+  margin: 20px auto;
+  text-align: center;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-weight: 800;
+  box-shadow: 0 10px 20px 0 #818181;
+}
+.title p {
+  font-weight: normal;
+  font-size: 13px;
+  text-transform: lowercase;
+  margin-top: -10px;
+  letter-spacing: 5px;
+}
+.container {
+  padding: 10px;
+  border: 1px solid #858585;
+  border-radius: 10px;
+  width: 400px;
+  height: 390px;
+  margin: 40px auto;
+  box-shadow: 0 5px 20px 0 #818181;
+}
+
+.screen {
+  width: 60%;
+  height: 50%;
+  background-image: var(--back-img);
+  margin: 0 auto 20px;
+  border-radius: 10px;
+}
+
+.colors {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 0 30px;
+}
+.colors #colorA,
+.colors #colorB {
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.colors #colorA::-webkit-color-swatch,
+.colors #colorB::-webkit-color-swatch {
+  width: 60px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.dir {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+.dir #direction {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid #00529B;
+  border-radius: 10px;
+  width: calc(100% - 200px);
+  padding: 0 10px;
+}
+#direction::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 0px;
+  border: 3px solid #B7E9FF;
+  
+  border-radius: 10px;
+}
+#direction::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #61009E;
+  margin-top: -10px;
+  border: 3px solid #B7E9FF;
+  background-color: #fff;
+}
+.dir select {
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  border: 1px solid #00529B;
+  border-radius: 10px;
+  background-color: #E1F4FF94;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: 600; 
+  font-size: 17px;
+}
+
+.output {
+  display: flex;
+  justify-content: space-around;
+}
+.output input {
+  outline: none;
+  border: 2px solid #777;
+  border-radius: 10px;
+  width: calc(100% - 100px);
+  font-weight: 600;
+  padding-left: 5px;
+  color: #2C2C2C
+}
+.output span {
+  color: #00155F;
+  background-color: #E4E4E4;
+  display: inline-block;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer
+}
