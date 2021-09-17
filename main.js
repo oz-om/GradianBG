@@ -8,7 +8,7 @@ let screen = document.querySelector('.screen'),
 
 
 function watch(el) {
-  el.onchange = function() {
+  el.oninput = function() {
     result.value = `linear-gradient(${dir.value}deg, ${colorA.value}, ${colorB.value})`;
     document.documentElement.style.setProperty('--back-img', result.value)
   }
